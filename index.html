@@ -14,17 +14,33 @@ TemplateMo 620 Compression
 https://templatemo.com/tm-620-compression
 -->
 </head>
+
 <body>
+   
 
     <!-- Global Header -->
     <header class="global-header">
-        <a href="#" class="logo">PHILA'<span>—</span>INC</a>
-        <nav class="nav">
+    
+        <a href="#" class="logo">
+            PHILA'<span>—</span>INC
+        </a>
+    
+        <!-- MENU BURGER -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    
+        <!-- MENU -->
+        <nav class="nav" id="nav-menu">
             <a href="#work">REALISATIONS</a>
-            <a href="#about">A propos</a>
-            <a href="#contact">Me Contacter</a>
+            <a href="#about">A PROPOS</a>
+            <a href="#contact">ME CONTACTER</a>
         </nav>
+    
     </header>
+    <div class="mobile-menu">
+        <!-- contenu du menu -->
+      </div>
 
     <!-- The Track -->
     <main class="track" role="region" aria-label="Portfolio Projects">
@@ -278,7 +294,7 @@ https://templatemo.com/tm-620-compression
                 </div>
                 <div class="modal__contact-item">
                     <p class="modal__contact-label">Téléphone</p>
-                    <p class="modal__contact-value"><a href="tel:+1234567890">+ (241) 74-00-82-29</a></p>
+                    <p class="modal__contact-value"><a href="+(241) 74-00-82-29">+ (241) 74-00-82-29</a></p>
                 </div>
                 <div class="modal__contact-item">
                     <p class="modal__contact-label">Social</p>
@@ -323,4 +339,23 @@ https://templatemo.com/tm-620-compression
     
     <script src="templatemo-620-compression-script.js"></script>
 </body>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function(){
+    
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("#nav-menu");
+    
+        menuToggle.addEventListener("click", function(e){
+    
+            e.stopPropagation();
+    
+            navMenu.classList.toggle("active");
+    
+        });
+    
+    });
+    
+    </script>
+
 </html>
