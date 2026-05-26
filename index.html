@@ -35,6 +35,7 @@ https://templatemo.com/tm-620-compression
             <a href="#work">REALISATIONS</a>
             <a href="#about">A PROPOS</a>
             <a href="#contact">ME CONTACTER</a>
+            <a href="#temoignages">TEMOIGNAGES</a>
         </nav>
     
     </header>
@@ -263,7 +264,7 @@ https://templatemo.com/tm-620-compression
     <div id="about" class="modal-overlay">
         <a href="#" class="modal__close" aria-label="Close">&times;</a>
         <div class="modal__content">
-            <p class="modal__label">Profile</p>
+            <p class="modal__label">Profil</p>
             <h2 class="modal__heading">A propos</h2>
             <p class="modal__text"><strong>Compétences</strong> Développeur Front-End passionné par la création d’interfaces
                 modernes, interactives et responsives.
@@ -280,32 +281,326 @@ https://templatemo.com/tm-620-compression
         </div>
     </div>
     <!-- Temoignages -->
-<div id="contact" class="modal-overlay">
+<div id="temoignages" class="modal-overlay">
         <a href="#" class="modal__close" aria-label="Close">&times;</a>
-        <div class="modal__content">
-            <p class="modal__label">Contactez-moi </p>
-            <h2 class="modal__heading">Parlons de <br>votre projet</h2>
-            <p class="modal__text">De l'idée à la réalisation, je vous accompagne à chaque étape. Contactez-moi pour échanger sur votre projet.</p>
-            <hr class="modal__divider">
-            <div class="modal__contact-grid">
-                <div class="modal__contact-item">
-                    <p class="modal__contact-label">Email</p>
-                    <p class="modal__contact-value"><a href="mailto:aboub8240@gmail.com">aboub8240@gmail.com</a></p>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Parallax | Interactive Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tooplate-living-parallax.css">
+<!--
+
+Tooplate 2150 Living Parallax
+
+https://www.tooplate.com/view/2150-living-parallax
+
+Free HTML CSS Template
+
+-->
+</head>
+<body>
+    <!-- UI Toggle Button - Always Visible -->
+    <button class="ui-toggle-btn" id="uiToggleBtn" aria-label="Toggle UI Visibility">
+        <svg viewBox="0 0 24 24" id="eyeIcon">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header class="ui-element">
+        <div class="logo"></div>
+        <nav id="mainNav">
+            <a onclick="openOverlay('about')">Aboutgg</a>
+            <a onclick="openOverlay('testimonials')">Testimonias</a>
+            <a onclick="openOverlay('contact')">Contact</a>
+            <button class="fullscreen-btn" id="fullscreenBtn" aria-label="Toggle Fullscreen">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                </svg>
+            </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider-wrapper">
+        <div class="slider-container" id="slider">
+            <!-- Slide 1 -->
+            <div class="slide active" data-index="0">
+                <div class="parallax-layer background-layer">
+                    <img src="images/mountain-dreams.jpg" alt="Mountains">
                 </div>
-                <div class="modal__contact-item">
-                    <p class="modal__contact-label">Téléphone</p>
-                    <p class="modal__contact-value"><a href="+(241) 74-00-82-29">+ (241) 74-00-82-29</a></p>
-                </div>
-                <div class="modal__contact-item">
-                    <p class="modal__contact-label">Social</p>
-                    <p class="modal__contact-value"><a href="philaincorporation@gmail.com">philaincorporation@gmail.com</a></p>
-                </div>
-                <div class="modal__contact-item">
-                    <p class="modal__contact-label">Adress</p>
-                    <p class="modal__contact-value">Gabon, Libreville</p>
+                <div class="image-info ui-element">
+                    <h2>Mountain Dreams4444</h2>
+                    <p>Where earth touches the sky in perfect harmony, creating breathtaking vistas</p>
                 </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" data-index="1">
+                <div class="parallax-layer background-layer">
+                    <img src="images/forest-whispers.jpg" alt="Forest">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Forest Whispers</h2>
+                    <p>Nature's secrets hidden in emerald depths, where tranquility meets adventure</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" data-index="2">
+                <div class="parallax-layer background-layer">
+                    <img src="images/ocean-serenity.jpg" alt="Ocean">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Ocean Serenity</h2>
+                    <p>Endless horizons where waves meet wonder, painting the perfect escape</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide" data-index="3">
+                <div class="parallax-layer background-layer">
+                    <img src="images/golden-hour.jpg" alt="Sunset">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Golden Hourllll</h2>
+                    <p>When the world glows with magical light, transforming every moment</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide" data-index="4">
+                <div class="parallax-layer background-layer">
+                    <img src="images/spring-bloom.jpg" alt="Flowers">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Spring Bloom</h2>
+                    <p>Life awakens in vibrant colors, celebrating nature's renewal</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide" data-index="5">
+                <div class="parallax-layer background-layer">
+                    <img src="images/desert-vastness.jpg" alt="Desert">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Desert Vastness</h2>
+                    <p>Endless dunes sculpted by wind and time, a landscape of c beauty</p>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide" data-index="6">
+                <div class="parallax-layer background-layer">
+                    <img src="images/waterfall-majesty.jpg" alt="Waterfall">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Waterfall Majesty</h2>
+                    <p>Cascading power and grace, where water carves its eternal path</p>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide" data-index="7">
+                <div class="parallax-layer background-layer">
+                    <img src="images/wild-encounters.jpg" alt="Wildlife">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Wild Encounters</h2>
+                    <p>Nature's inhabitants in their pristine habitat, untamed and free</p>
+                </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="slide" data-index="8">
+                <div class="parallax-layer background-layer">
+                    <img src="images/summit-glory.jpg" alt="Mountain Peak">
+                </div>
+                <div class="image-info ui-element">
+                    <h2>Summit Glory</h2>
+                    <p>Standing above the clouds, where adventure meets achievement</p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-arrow prev ui-element">‹</div>
+            <div class="nav-arrow next ui-element">›</div>
+
+            <!-- Dots -->
+            <div class="dots-container ui-element">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+                <span class="dot" data-slide="5"></span>
+                <span class="dot" data-slide="6"></span>
+                <span class="dot" data-slide="7"></span>
+                <span class="dot" data-slide="8"></span>
+            </div>
         </div>
+    </div>
+
+    <!-- Global Parallax Shapes -->
+    <div class="parallax-shape shape-1 ui-element"></div>
+    <div class="parallax-shape shape-2 ui-element"></div>
+
+    <!-- Play/Pause Button -->
+    <button class="play-pause-btn ui-element" id="playPauseBtn" aria-label="Play/Pause Slideshow">
+        <svg viewBox="0 0 24 24">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+        </svg>
+    </button>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container ui-element">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Duration Controls -->
+    <div class="duration-controls ui-element">
+        <button class="duration-btn" id="decreaseDuration" aria-label="Decrease Duration">−</button>
+        <div class="duration-display" id="durationDisplay">5<span>s</span></div>
+        <button class="duration-btn" id="increaseDuration" aria-label="Increase Duration">+</button>
+    </div>
+
+    <!-- About Overlay -->
+    <div class="overlay" id="aboutOverlay">
+        <div class="overlay-content">
+            <button class="close-btn" onclick="closeOverlay('about')">×</button>
+            <h2>About Us</h2>
+            <p>Welcome to Living Parallax, where visual storytelling meets cutting-edge design. We believe in the power of images to inspire, captivate, and transport viewers to extraordinary places.</p>
+            <p>Our mission is to showcase the world's most breathtaking landscapes and moments through an immersive, interactive experience. Each image is carefully curated to evoke emotion and wonder, utilizing parallax scrolling technology to create depth and movement that brings photography to life.</p>
+            <p>Every scroll reveals new perspectives, every movement adds dimension, and every image tells a story waiting to be discovered.</p>
+            <p>Take control of your time with <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> today. Bring your designs to life with <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a> resources.</p>
+            <p>Living Parallax is a free HTML template designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a> for creating stunning fullscreen image galleries.</p>
+            <p>UI toggle button to hide/show all interface elements for distraction-free viewing</p>
+            <p>Keyboard navigation (Arrow keys for slides, H key for UI toggle)</p>
+            <p>Auto-play controls with play/pause functionality</p>
+            <p>Smooth overlay panels for About, Testimonials, and Contact sections</p>
+            <p>Beautiful stock photography provided by <a href="https://unsplash.com" target="_blank" rel="nofollow noopener">Unsplash</a>, enhanced with interactive parallax effects and customizable slideshow timing.</p>
+            <img src="images/about-mountain.jpg" alt="Mountain landscape" class="overlay-image">
+        </div>
+    </div>
+
+    <!-- Testimonials Overlay -->
+    <div class="overlay" id="testimonialsOverlay">
+        <div class="overlay-content">
+            <button class="close-btn" onclick="closeOverlay('testimonials')">×</button>
+            <h2>Testimonials</h2>
+            
+            <div class="testimonial-card">
+                <p>"This gallery is absolutely stunning! The parallax effect adds such an immersive quality to the images. I found myself scrolling through multiple times just to experience the smooth transitions and beautiful photography."</p>
+                <p class="author">Sarah Mitchell, Photography Enthusiast</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"As a web designer, I'm always looking for inspiration. This gallery perfectly balances aesthetics with functionality. The responsive design works flawlessly on all my devices, and the user experience is simply outstanding."</p>
+                <p class="author">James Rodriguez, Web Designer</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"I've seen many photo galleries online, but none compare to this one. The attention to detail, the smooth animations, and the curated selection of images make this a truly memorable experience. Highly recommended!"</p>
+                <p class="author">Emily Chen, Creative Director</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"The combination of stunning visuals and innovative technology creates something truly special. Each image feels alive with the parallax movement. It's like stepping into the photographs themselves."</p>
+                <p class="author">Michael Thompson, Nature Photographer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Overlay -->
+    <div class="overlay" id="contactOverlay">
+        <div class="overlay-content">
+            <button class="close-btn" onclick="closeOverlay('contact')">×</button>
+            <h2>Contact Us</h2>
+            <p>Have a question or want to collaborate? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <label>Nom</label>
+                <input type="text" name="name" placeholder="Your name" required>
+                
+                <label>Email</label>
+                <input type="email" name="email" placeholder="your.email@example.com" required>
+                
+                <label>Suject</label>
+                <input type="text" name="subject" placeholder="What's this about?" required>
+                
+                <label>Laissez un Message</label>
+                <textarea name="message" placeholder="Tell us more..." required></textarea>
+                
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+            
+            <div class="contact-address">
+                <h3>Visit Us</h3>
+                <p>123 Gallery Street, Art District<br>
+                San Francisco, CA 94102<br>
+                United States<br>
+                <a href="tel:+14155551234">+1 (415) 555-1234</a> | <a href="mailto:hello@livingparallax.com">hello@livingparallax.com</a></p>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019720565487!2d-122.41941548468169!3d37.77492997975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1635959045789!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 12px; opacity: 0.9;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="overlay-map">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Overlay -->
+    <div class="overlay" id="privacyOverlay">
+        <div class="overlay-content">
+            <button class="close-btn" onclick="closeOverlay('privacy')">×</button>
+            <h2>Privacy Policy</h2>
+            <p>At Parallax Gallery, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you visit our website.</p>
+            
+            <p><strong>Information We Collect:</strong> We may collect personal information such as your name, email address, and any other details you provide when contacting us through our website forms. We also collect non-personal information such as browser type, IP address, and pages visited for analytics purposes.</p>
+            
+            <p><strong>How We Use Your Information:</strong> The information we collect is used to respond to your inquiries, improve our website experience, and send occasional updates about our gallery (only if you've opted in). We never sell, trade, or rent your personal information to third parties.</p>
+            
+            <p><strong>Data Security:</strong> We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, or misuse. All form submissions are transmitted securely.</p>
+            
+            <p><strong>Cookies:</strong> Our website may use cookies to enhance user experience and track website analytics. You can disable cookies in your browser settings, though this may affect certain website functionalities.</p>
+            
+            <p><strong>Third-Party Services:</strong> We use Unsplash for image hosting, which may have its own privacy policies. We recommend reviewing their terms if you have concerns about image content.</p>
+            
+            <p><strong>Your Rights:</strong> You have the right to access, correct, or delete any personal information we hold about you. To exercise these rights, please contact us through our contact form.</p>
+            
+            <p><strong>Changes to This Policy:</strong> We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+            
+            <p>If you have any questions about this Privacy Policy, please don't hesitate to contact us.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="ui-element">
+        <p class="footer__credit">© 2026 PHILA'INCORPORATION — Tous droits réservés.</p>
+    </footer>
+<script src="tooplate-living-scripts.js"></script>
+</body>
+</html>
     </div>
 
     <!-- Contact Modal -->
@@ -357,5 +652,6 @@ https://templatemo.com/tm-620-compression
     });
     
     </script>
+    
 
 </html>
